@@ -1,0 +1,22 @@
+#hero {
+    height: 90dvh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-home {
+    background: url('src/assets/desktop-tools-bg.jpg') fixed no-repeat;
+    background-size: cover;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+
