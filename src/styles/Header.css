@@ -1,0 +1,77 @@
+header {
+    background: var(--blueGradient);
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    text-indent: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: column;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(253, 253, 219);
+    display: block;
+    text-align: center;
+}
+
+header nav a {
+    padding: 1rem;
+}
+
+header nav a:hover {
+    background: red;
+}
+
+header nav {
+    grid-column: span 2;
+    max-height: 200px;
+    pointer-events: initial;
+    transition: 300ms ease-in;
+}
+
+header nav.inactive {
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.nav-trigger {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    width: 50px;
+    justify-self: end;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-trigger > .nav-beam{
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 300ms ease-in;
+}
+
+.header-logo {
+    height: 50px;
+    width: 50px;
+    background: red;
+}
+
+.nav-trigger.active > .nav-beam:first-child {
+    transform: translateY(100%) rotate(45deg);
+}
+
+.nav-trigger.active > .nav-beam:last-child {
+    transform: translateY(-100%) rotate(-45deg);
+}
