@@ -4,6 +4,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .hero-home {
@@ -15,8 +16,19 @@
     font-size: 3rem;
 }
 
+#hero p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 a.button {
+    display: inline-block;
     text-decoration: none;
+    padding: 1rem 2rem;
+    background: var(--blueGradient);
+    border-radius: 1rem;
+    color: #fff;
+    margin: 1rem 0;
 }
 
 
