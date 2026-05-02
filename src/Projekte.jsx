@@ -3,8 +3,25 @@ import './styles/Projekte.css'
 
 export default function Projekte() {
 
+    const chosenProjects = [
+        {
+            title: "TuS Eversten",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus exercitationem nostrum, enim alias cumque recusandae, sed ut corrupti corporis earum, facere culpa maxime esse?",
+            logoURL: "src/assets/logos/tuseversten-logo.png"
+        },
+        {
+            title: "Nightlife Events",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi ut veniam aliquid nam sint quasi eveniet praesentium ipsam omnis excepturi doloremque nostrum, illo sed?",
+            logoURL: "src/assets/logos/nightlifeevents-logo.png"
+        },
+        {
+            title: "TTC Oldenburg",
+            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatum quis distinctio, aliquam quibusdam numquam consequuntur ipsa sunt error aliquid pariatur, deleniti, reiciendis asperiores officiis!",
+            logoURL: "src/assets/logos/ttcoldenburg-logo.png"
+        }
+    ]
+
     const [activeProjekt, setActiveProjekt] = useState(0)
-    const test = [1,2,3]
 
     return (
         <section className="projekte">
@@ -14,28 +31,26 @@ export default function Projekte() {
                 <div className="projekte-area">
                     <nav className="projekte-navigation">
                         {
-                            test.map( (el, index) => {
+                            chosenProjects.map( (el, index) => {
                                 return (
                                     <div onClick={
                                         () => setActiveProjekt(index)
-                                    }>{el}</div>
+                                    }><img src={el.logoURL}/></div>
                                 )
                             })
                         }
                     </nav>
                     <div className="projekte-details" style={{transform: `translateX(-${activeProjekt*100}%)`}}>
-                        <div>
-                            <h3>TuS Eversten</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos incidunt distinctio alias quam, nulla accusamus at minus odio cupiditate adipisci non optio, praesentium repudiandae aspernatur?</p>
-                        </div>
-                        <div>
-                            <h3>Nightlife Events</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus eos dolorem sit nisi libero, molestiae minima neque culpa aperiam praesentium nobis maxime similique atque?</p>
-                        </div>     
-                        <div>
-                            <h3>TTC Oldenburg</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, sit placeat quos molestias molestiae sunt praesentium natus dolorum enim possimus officiis commodi et ut unde?</p>
-                        </div>   
+                        {
+                            chosenProjects.map( (el) => {
+                                return (
+                                    <div>
+                                        <h3>{el.title}</h3>
+                                        <p>{el.text}</p>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
