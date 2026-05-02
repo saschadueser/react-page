@@ -5,6 +5,8 @@ import Hero from './Hero.jsx';
 import Leistungen from './Leistungen.jsx';
 import Projekte from './Projekte.jsx'
 import Form from './Form.jsx'
+import About from './About.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
 
@@ -17,10 +19,11 @@ function App() {
     <main>
         <Leistungen />
         <Projekte />
+        <About />
         <Form />
     </main>
 
-    
+    <Footer />
     </>
   )
 }

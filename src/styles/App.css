@@ -59,3 +59,11 @@ h6 {
 section {
   padding: 3rem;
 }
+
+section:nth-child(odd) {
+  background: var(--blueGradient);
+}
+
+section:nth-child(odd) h2 {
+  color: #fff;
+}

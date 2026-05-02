@@ -42,3 +42,8 @@
     width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    .projekte-wrapper {
+        grid-template: 1fr / 1fr 1fr;
+    }
+}

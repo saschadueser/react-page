@@ -4,9 +4,12 @@ header {
     grid-template: auto / 1fr 1fr;
     align-items: center;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
+    box-shadow: var(--regularShadow);
 }
 
 header nav ul li {
@@ -49,15 +52,16 @@ header nav.inactive {
 
 
 .nav-trigger {
+    justify-self: end;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
     width: 50px;
-    justify-self: end;
     cursor: pointer;
     position: relative;
     margin: 2rem;
-    background: red;
     height: 100%;
 }
 
@@ -81,4 +85,13 @@ header nav.inactive {
 
 .nav-trigger.active > .nav-beam:last-child {
     transform: translateY(-100%) rotate(-45deg);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        top: 1rem;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 40px;
+    }
 }
