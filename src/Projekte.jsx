@@ -7,17 +7,20 @@ export default function Projekte() {
         {
             title: "TuS Eversten",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus exercitationem nostrum, enim alias cumque recusandae, sed ut corrupti corporis earum, facere culpa maxime esse?",
-            logoURL: "src/assets/logos/tuseversten-logo.png"
+            logoURL: "src/assets/logos/tuseversten-logo.png",
+            previewImgURL: ""
         },
         {
             title: "Nightlife Events",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi ut veniam aliquid nam sint quasi eveniet praesentium ipsam omnis excepturi doloremque nostrum, illo sed?",
-            logoURL: "src/assets/logos/nightlifeevents-logo.png"
+            logoURL: "src/assets/logos/nightlifeevents-logo.png",
+            previewImgURL: ""
         },
         {
             title: "TTC Oldenburg",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatum quis distinctio, aliquam quibusdam numquam consequuntur ipsa sunt error aliquid pariatur, deleniti, reiciendis asperiores officiis!",
-            logoURL: "src/assets/logos/ttcoldenburg-logo.png"
+            logoURL: "src/assets/logos/ttcoldenburg-logo.png",
+            previewImgURL: ""
         }
     ]
 
@@ -27,7 +30,7 @@ export default function Projekte() {
         <section className="projekte">
             <h2>Projekte</h2>
             <div className="projekte-wrapper">
-                <div className="projekte-preview"></div>
+                <div className="projekte-preview" style={{background: "url(./assets/desktop-tools-bg.jpg)"}}></div>
                 <div className="projekte-area">
                     <nav className="projekte-navigation">
                         {

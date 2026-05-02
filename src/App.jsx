@@ -4,6 +4,7 @@ import Header from './Header.jsx';
 import Hero from './Hero.jsx';
 import Leistungen from './Leistungen.jsx';
 import Projekte from './Projekte.jsx'
+import Form from './Form.jsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <main>
         <Leistungen />
         <Projekte />
+        <Form />
     </main>
 
     

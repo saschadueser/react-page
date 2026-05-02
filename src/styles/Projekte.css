@@ -1,5 +1,6 @@
 .projekte-wrapper {
     display: grid;
+    grid-template: 1fr 1fr / 1fr;
     overflow: hidden;
 }
 
@@ -11,6 +12,12 @@
 
 .projekte-details > div {
     flex: 1 0 100%;
+}
+
+.projekte-preview {
+    background: red;
+    height: 100px;
+    width: 100%;
 }
 
 .projekte-navigation {
