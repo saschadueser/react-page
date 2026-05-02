@@ -1,0 +1,31 @@
+.projekte-wrapper {
+    display: grid;
+    overflow: hidden;
+}
+
+.projekte-details {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.projekte-details > div {
+    flex: 1 0 100%;
+}
+
+.projekte-navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+.projekte-navigation > div {
+    cursor: pointer;
+    background: var(--blueGradient);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+

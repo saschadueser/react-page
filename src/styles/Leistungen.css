@@ -1,4 +1,4 @@
-section.services {
+section.services .services-wrapper{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -15,14 +15,14 @@ section.services {
 
 /* ab Tablet Größe */
 @media screen and (min-width: 768px) {
-    section.services {
+    section.services .services-wrapper {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 /* ab große Bildschirme */
 @media screen and (min-width: 1280px) {
-    section.services {
+    section.services .services-wrapper{
         display: flex;
         flex-flow: row wrap;
     }
