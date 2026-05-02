@@ -27,6 +27,10 @@ body {
   font-family: Lora;
 }
 
+p {
+  margin: 1rem 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
   margin-bottom: 1rem;
@@ -64,6 +68,6 @@ section:nth-child(odd) {
   background: var(--blueGradient);
 }
 
-section:nth-child(odd) h2 {
+section:nth-child(odd) h2, section:nth-child(odd) p {
   color: #fff;
 }
