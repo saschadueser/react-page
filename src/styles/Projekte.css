@@ -5,6 +5,7 @@
 }
 
 .projekte-details {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     transition: 300ms ease-in;
@@ -18,7 +19,7 @@
     background: red;
     height: 100px;
     width: 100%;
-}
+} 
 
 .projekte-navigation {
     display: flex;

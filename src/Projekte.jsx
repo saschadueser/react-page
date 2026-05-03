@@ -6,19 +6,19 @@ export default function Projekte() {
     const chosenProjects = [
         {
             title: "TuS Eversten",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus exercitationem nostrum, enim alias cumque recusandae, sed ut corrupti corporis earum, facere culpa maxime esse?",
+            text: "WordPress-Webdesign für den TuS Eversten aus Oldenburg zur Modernisierung der Vereinswebsite. Ziel war eine klare Struktur, bessere mobile Nutzbarkeit und eine zeitgemäße Außendarstellung für Mitglieder und Interessenten.",
             logoURL: "src/assets/logos/tuseversten-logo.png",
             previewImgURL: ""
         },
         {
             title: "Nightlife Events",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi ut veniam aliquid nam sint quasi eveniet praesentium ipsam omnis excepturi doloremque nostrum, illo sed?",
+            text: "Entwicklung einer conversion-optimierten WordPress-Website für Nightlife Events aus Wilhelmshaven zur Vermarktung von Partyreisen nach Kroatien. Fokus auf Buchungsführung, Zielgruppenansprache und Steigerung der Reiseanfragen.",
             logoURL: "src/assets/logos/nightlifeevents-logo.png",
             previewImgURL: ""
         },
         {
             title: "TTC Oldenburg",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatum quis distinctio, aliquam quibusdam numquam consequuntur ipsa sunt error aliquid pariatur, deleniti, reiciendis asperiores officiis!",
+            text: "Redesign der WordPress-Website des TTC Oldenburg mit Fokus auf Benutzerfreundlichkeit, übersichtliche Darstellung von Vereinsinformationen und einem modernen, vertrauenswürdigen Auftritt für Mitglieder und Neuzugänge.",
             logoURL: "src/assets/logos/ttcoldenburg-logo.png",
             previewImgURL: ""
         }
