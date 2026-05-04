@@ -1,4 +1,5 @@
 import './styles/App.css'
+import './assets/fontawesome/css/all.min.css'
 
 import Header from './Header.jsx';
 import Hero from './Hero.jsx';

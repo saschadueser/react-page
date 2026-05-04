@@ -15,7 +15,7 @@
 }
 
 :root {
-  --blueGradient: linear-gradient(rgb(90, 90, 153),rgb(40, 67, 106));
+  --blueGradient: linear-gradient(rgb(103, 103, 161),rgb(26, 49, 80));
   --regularShadow: 3px 5px 25px rgba(0,0,0,0.1);
   --accentYellow: rgb(234, 235, 147);
 }
@@ -48,9 +48,11 @@ h1 {
   margin-bottom: 2rem;
 }
 
+
 h2 {
   font-size: 2.5rem;
   line-height: 1.2;
+  text-align: center;
 }
 
 h3 {
@@ -74,7 +76,7 @@ h6 {
 }
 
 section {
-  padding: 3rem;
+  padding: 2rem 3rem 5rem 3rem;
 }
 
 a {

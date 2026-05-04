@@ -1,27 +1,70 @@
-section.services .services-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
+section.services {
+    text-align: center;
+}
+
+.services-wrapper {
+    display: flex;
     gap: 1rem;
+    flex-flow: column wrap;
 }
 
 .service {
     text-align: center;
     padding: 2rem 1rem;
-    flex: 1 0 350px;
-    border-radius: 25px;
-    box-shadow: 3px 5px 25px rgba(0,0,0,0.1);
-    background: var(--blueGradient);
-    color: #fff;
+    flex: 1;
+}
+
+.service .fa {
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.service .fa:after {
+    content: "";
+    position: absolute;
+    background: var(--accentYellow);
+    border-radius: 100%;
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: translateX(-10px);
+    filter: blur(10px);
 }
 
 .service h3 {
-    color: var(--accentYellow);
+    position: relative;
 }
+
+
 
 /* ab Tablet Größe */
 @media screen and (min-width: 768px) {
     section.services .services-wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    section.services .services-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service {
+        text-align: center;
+        padding: 2rem 1rem;
+        flex: 1 0 350px;
+        border-radius: 25px;
+        box-shadow: 3px 5px 25px rgba(0,0,0,0.1);
+        background: var(--blueGradient);
+        color: #fff;
     }
 }
 
