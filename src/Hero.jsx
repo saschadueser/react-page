@@ -2,10 +2,12 @@ import './styles/Hero.css'
 
 export default function Hero() {
     return (
-        <div id="hero" className='hero-home' >
-            <h1>Webdesign aus Westerstede</h1>
-            <p>Ich erstelle starke Websites für kleine Unternehmen, die online mehr Kunden gewinnen wollen.</p>
-            <a href="" className="button">Jetzt Kontakt aufnehmen</a>
+        <div id="hero" className='hero-home'>
+            <div className='hero-content'>
+                <h1>Websites, die Kunden bringen</h1>
+                <p>Ich erstelle moderne Websites für kleine Unternehmen in Westerstede und Umgebung, damit du online sichtbar wirst und neue Kunden gewinnst.</p>
+                <a href="" className="button">Jetzt Kontakt aufnehmen</a>
+            </div>
         </div>
     )
 }

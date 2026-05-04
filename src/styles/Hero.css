@@ -1,11 +1,25 @@
 #hero {
-    height: 90dvh;
+    height: 100dvh;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     text-align: center;
+    position: relative;
+}
+
+#hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .hero-home {
@@ -16,17 +30,46 @@
 #hero p {
     font-size: 1.5rem;
     text-align: center;
+    color: #fff;
 }
 
 a.button {
+    transition: 300ms ease-in;
     display: inline-block;
     text-decoration: none;
-    padding: 1rem 2rem;
-    background: var(--blueGradient);
-    border-radius: 1rem;
+    padding: 1rem 1.25rem;
     color: #fff;
     margin: 1rem 0;
     box-shadow: var(--regularShadow);
+    border: 3px solid var(--accentYellow);
+    background: linear-gradient(to right, transparent 0%, transparent 50%, var(--accentYellow)50%, var(--accentYellow) 100%);
+    background-size: 200%;
+    background-position: left;
 }
 
+a.button:hover {
+    background-position: right;
+    color: #000;
+}
 
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    color: var(--accentYellow);
+}
+
+#hero h1::after {
+  content: "";
+  height: 3px;
+  width: 50%;
+  background: var(--accentYellow);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin: 0 auto;
+}
