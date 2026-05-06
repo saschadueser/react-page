@@ -15,9 +15,12 @@
 }
 
 :root {
-  --blueGradient: linear-gradient(rgb(103, 103, 161),rgb(26, 49, 80));
+  /* --blueGradient: linear-gradient(rgb(103, 103, 161),rgb(26, 49, 80)); */
+  --blueGradient: linear-gradient(#4f6a88, #2e2649);
   --regularShadow: 3px 5px 25px rgba(0,0,0,0.1);
   --accentYellow: rgb(234, 235, 147);
+
+  --pageMaxWidth: 1400px;
 }
 
 html {
@@ -26,6 +29,7 @@ html {
 
 body {
   font-family: Inter;
+  background: rgb(226, 226, 226);
 }
 
 p {
@@ -76,7 +80,11 @@ h6 {
 }
 
 section {
-  padding: 2rem 3rem 5rem 3rem;
+  padding: 4rem 3rem 5rem 3rem;
+}
+
+section > h2 {
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -84,7 +92,8 @@ a {
 }
 
 section:nth-child(even) {
-  background: rgb(214, 213, 193);
+  background: var(--blueGradient);
+  color: #e2e2e2;
 }
 
 strong {
@@ -93,4 +102,15 @@ strong {
 
 i, em {
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    max-width: var(--pageMaxWidth);
+    margin: 0 auto;
+  }
+
+  section:nth-child(even) {
+    max-width: 100%;
+  }
 }

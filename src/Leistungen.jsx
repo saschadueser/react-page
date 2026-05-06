@@ -4,24 +4,24 @@ export default function Intro() {
 
     const servicePoints = [
         {
-            title: "Website",
+            title: "Website-Erstellung",
             text: "Moderne, schnelle Websites für kleine Unternehmen, die professionell wirken und neue Kunden gewinnen. Von der Planung bis zum fertigen Online-Auftritt.",
             icon: "fa fa-laptop"
         },
         {
             title: "Updates & Wartung",
-            text: "Regelmäßige Updates, Pflege und Wartung sorgen dafür, dass deine Website sicher, aktuell und zuverlässig erreichbar bleibt.",
+            text: "Deine Website bleibt sicher, funktioniert einwandfrei und ist jederzeit online - Ich kümmere mich darum!",
             icon: "fa fa-gears"
         },
         {
             title: "Optimierung der Website",
-            text: "Bessere Google-Rankings, schnellere Ladezeiten und eine optimale Nutzererfahrung machen eine erfolgreiche Website aus. Ich unterstütze dich bei der nachhaltigen SEO-Optimierung.",
+            text: "Schnelle Ladezeiten und eine optimale Nutzererfahrung machen eine erfolgreiche Website aus. Ich unterstütze dich bei der nachhaltigen Optimierung.",
             icon: "fa fa-bolt-lightning"
         },
         {
-            title: "XXX",
-            text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sit placeat iure nostrum aperiam dicta!",
-            icon: ""
+            title: "SEO",
+            text: "Ich verbessere das Ranking deiner Website in den Google-Suchergebnissen und sorge dafür, dass dein Unternehmen besser gefunden wird. Durch gezielte SEO-Optimierung erhöhe ich nachhaltig deine Sichtbarkeit und gewinne mehr relevante Besucher.",
+            icon: "fa fa-search"
         }
     ]
 

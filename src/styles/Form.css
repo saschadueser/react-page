@@ -1,3 +1,8 @@
+form {
+    max-width: var(--pageMaxWidth);
+    margin: 0 auto;
+}
+
 input, textarea {
     display: block;
     width: 100%;
@@ -10,3 +15,4 @@ label {
     display: block;
     margin-top: 1rem;
 }
+

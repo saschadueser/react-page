@@ -1,9 +1,12 @@
 import './styles/About.css'
 
+import portrait from './assets/selbstportrait.jpg'
+
 export default function About() {
     return (
         <section className='about'>
         <h2>Über Mich</h2>
+        <img src={portrait} alt="" />
         <p>
             Ich bin <strong>Sascha aus Westerstede</strong> und helfe kleinen Unternehmen dabei, mit <strong>modernen Websites</strong> online sichtbar zu werden und neue Kunden zu gewinnen.
         </p>

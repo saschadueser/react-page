@@ -66,6 +66,14 @@ section.services {
         background: var(--blueGradient);
         color: #fff;
     }
+
+    .service .fa:after {
+        content: none;
+    }
+
+    .service .fa {
+        color: var(--accentYellow);
+    }
 }
 
 /* ab große Bildschirme */
@@ -74,4 +82,5 @@ section.services {
         display: flex;
         flex-flow: row wrap;
     }
+    
 }

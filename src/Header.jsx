@@ -2,6 +2,8 @@ import './styles/Header.css'
 
 import { useState } from 'react'
 
+import sdLogo from './assets/logos/s-logo-100px.png'
+
 export default function Header() {
 
     const [navActive, setNavActive] = useState(false);
@@ -13,7 +15,7 @@ export default function Header() {
     return (
         <header>
             <div className='header-logo'>
-
+                <img src={sdLogo} alt="Logo von Sascha Dueser" />
             </div>
             <div className={`nav-trigger ${navActive ? 'active' : ''}`} onClick={toggleNav}>
                 <div className='nav-beam'></div>
