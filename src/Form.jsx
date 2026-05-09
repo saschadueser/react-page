@@ -2,7 +2,7 @@ import './styles/Form.css'
 
 export default function Form() {
     return (
-        <section className="contact-form">
+        <>
             <h2>Kontakt</h2>
             <form action="">
                 <label htmlFor="name">Dein Name:</label>
@@ -19,6 +19,6 @@ export default function Form() {
             
                 <input type="submit" value="Absenden" />
             </form>
-        </section>
+            </>
     )
 }

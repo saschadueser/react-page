@@ -1,0 +1,29 @@
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.contact-option {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    padding: 1rem;
+    text-decoration: none;
+    border: 2px solid var(--accentYellow);
+    background: linear-gradient(to right, transparent 0%, transparent 50%, var(--accentYellow)50%, var(--accentYellow) 100%);
+    background-size: 200%;
+    background-position: left;
+    transition: 300ms ease-in;
+}
+
+.contact-option:hover {
+    background-position: right;
+    color: #000;
+}
+
+

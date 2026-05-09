@@ -32,6 +32,10 @@ body {
   background: rgb(226, 226, 226);
 }
 
+.fa, .fa-brands {
+  font-size: 2rem;
+}
+
 textarea {
   font-family: Inter;
 }
