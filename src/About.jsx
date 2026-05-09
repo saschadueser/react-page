@@ -7,17 +7,11 @@ export default function About() {
         <section className='about'>
         <h2>Über Mich</h2>
         <img src={portrait} alt="" />
-        <p>
-            Ich bin <strong>Sascha aus Westerstede</strong> und entwickle moderne, schnelle und benutzerfreundliche <strong>Websites für kleine Unternehmen</strong>.
-        </p>
 
-        <p>
-            Mein Ziel ist es, Websites zu erstellen, die nicht nur professionell aussehen, sondern auch <strong>mehr Anfragen und Kunden</strong> bringen.
-        </p>
-
-        <p>
-            Neben der Erstellung übernehme ich außerdem <strong>Wartung</strong>, <strong>SEO-Optimierung</strong> und technische Verbesserungen für eine sichere und leistungsstarke Website.
-        </p>
+        <p>Ich bin Sascha Düser und entwickle <strong>moderne Websites für kleine Unternehmen, Vereine und Startups.</strong></p>
+        <p>Den Einstieg in die Webentwicklung habe ich mir eigenständig beigebracht – mit dem Anspruch, Websites zu erstellen, die nicht nur gut aussehen, sondern auch technisch sauber und benutzerfreundlich funktionieren.</p>
+        <p>Mein Fokus liegt auf modernen, responsiven Websites mit klarem Design, schneller Ladezeit und einer verständlichen Nutzerführung. Dabei ist mir eine <strong>persönliche und unkomplizierte Zusammenarbeit</strong> besonders wichtig.</p>
+        <p>Als Webdesigner aus <strong>Westerstede</strong> unterstütze ich Unternehmen dabei, online professionell aufzutreten und lokal besser gefunden zu werden.</p>
     </section>
     )
 }

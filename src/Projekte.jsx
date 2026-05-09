@@ -11,21 +11,21 @@ export default function Projekte() {
     const chosenProjects = [
         {
             title: "TuS Eversten",
-            text: "WordPress-Webdesign für den TuS Eversten aus Oldenburg zur Modernisierung der Vereinswebsite. Ziel war eine klare Struktur, bessere mobile Nutzbarkeit und eine zeitgemäße Außendarstellung für Mitglieder und Interessenten.",
+            text: "Website-Relaunch für den TuS Eversten aus Oldenburg auf Basis von WordPress. Die bestehende Vereinswebsite wurde modernisiert und strukturell überarbeitet, um Inhalte klarer darzustellen und die Nutzung auf mobilen Geräten deutlich zu verbessern. Dabei wurde das bestehende Corporate Design übernommen und in ein zeitgemäßes Webdesign übersetzt.",
             logoURL: "src/assets/logos/tuseversten-logo.png",
             websiteLink: "https://tus-eversten.de",
             previewImgURL: mockupTUS
         },
         {
             title: "Nightlife Events",
-            text: "Entwicklung einer conversion-optimierten WordPress-Website für Nightlife Events aus Wilhelmshaven zur Vermarktung von Partyreisen nach Kroatien. Fokus auf Buchungsführung, Zielgruppenansprache und Steigerung der Reiseanfragen.",
+            text: "Entwicklung einer WordPress-Website für Nightlife Events aus Wilhelmshaven zur Vermarktung von Partyreisen nach Kroatien. Im Mittelpunkt stand eine klare Präsentation des Reiseangebots sowie eine gezielte Nutzerführung, die Interessenten schnell zu einer Anfrage führt.",
             logoURL: "src/assets/logos/nightlifeevents-logo.png",
             websiteLink: "https://nightlifeevents.eu",
             previewImgURL: mockupNightlife
         },
         {
             title: "TTC Oldenburg",
-            text: "Redesign der WordPress-Website des TTC Oldenburg mit Fokus auf Benutzerfreundlichkeit, übersichtliche Darstellung von Vereinsinformationen und einem modernen, vertrauenswürdigen Auftritt für Mitglieder und Neuzugänge.",
+            text: "Redesign der Website des TTC Oldenburg mit dem Ziel, Vereinsinformationen übersichtlich und modern darzustellen. Die neue Struktur verbessert die Orientierung für Mitglieder und Interessenten und sorgt für einen zeitgemäßen, vertrauenswürdigen Online-Auftritt.",
             logoURL: "src/assets/logos/ttcoldenburg-logo.png",
             websiteLink: "https://ttc-oldenburg.de",
             previewImgURL: mockupTTC
