@@ -52,11 +52,11 @@ export default function Projekte() {
                         }
                     </nav>
                     <div className='projekte-details-wrapper'>
-                        <div className="projekte-details" style={{transform: `translateX(-${activeProjekt*100}%)`}}>
+                        <div className="projekte-details">
                             {
-                                chosenProjects.map( (el) => {
+                                chosenProjects.map( (el, index) => {
                                     return (
-                                        <div>
+                                        <div className='projekt-text' style={{opacity: `${activeProjekt === index ? 1 : 0}`}}>
                                             <h3>{el.title}</h3>
                                             <p>{el.text}</p>
                                             <a href={el.websiteLink} target='_blank'>Link zur Website <span className='fa fa-external-link'></span></a>

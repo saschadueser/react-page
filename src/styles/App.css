@@ -32,6 +32,10 @@ body {
   background: rgb(226, 226, 226);
 }
 
+textarea {
+  font-family: Inter;
+}
+
 p {
   margin: 1rem 0;
   font-weight: 400;

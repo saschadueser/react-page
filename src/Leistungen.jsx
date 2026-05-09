@@ -5,22 +5,26 @@ export default function Intro() {
     const servicePoints = [
         {
             title: "Website-Erstellung",
-            text: "Moderne, schnelle Websites für kleine Unternehmen, die professionell wirken und neue Kunden gewinnen. Von der Planung bis zum fertigen Online-Auftritt.",
+            text: "Professionelle Websites für kleine Unternehmen und Selbständige.",
+            bulletpoints: ["Mobiloptimierung", "Barrierefrei", "Schnell & SEO-ready"],
             icon: "fa fa-laptop"
         },
         {
             title: "Updates & Wartung",
             text: "Deine Website bleibt sicher, funktioniert einwandfrei und ist jederzeit online - Ich kümmere mich darum!",
+            bulletpoints: [],
             icon: "fa fa-gears"
         },
         {
             title: "Optimierung der Website",
             text: "Schnelle Ladezeiten und eine optimale Nutzererfahrung machen eine erfolgreiche Website aus. Ich unterstütze dich bei der nachhaltigen Optimierung.",
+            bulletpoints: [],
             icon: "fa fa-bolt-lightning"
         },
         {
             title: "SEO",
             text: "Ich verbessere das Ranking deiner Website in den Google-Suchergebnissen und sorge dafür, dass dein Unternehmen besser gefunden wird. Durch gezielte SEO-Optimierung erhöhe ich nachhaltig deine Sichtbarkeit und gewinne mehr relevante Besucher.",
+            bulletpoints: [],
             icon: "fa fa-search"
         }
     ]
@@ -37,6 +41,13 @@ export default function Intro() {
                                 <div className={el.icon}></div>
                                 <h3>{el.title}</h3>
                                 <p>{el.text}</p>
+                                <ul>
+                                    {el.bulletpoints.map( bp => {
+                                        return (
+                                            <li>{bp}</li>
+                                        )
+                                    })}
+                                </ul>
                             </div>
                         )
                     })

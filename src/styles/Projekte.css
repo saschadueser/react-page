@@ -9,14 +9,17 @@
 }
 
 .projekte-details {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
     transition: 300ms ease-in;
 }
 
 .projekte-details-wrapper {
     overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+.projekte-details > div {
+    position: absolute;
 }
 
 .projekte-details a {
@@ -41,17 +44,12 @@
     transform: translateX(10%);
 }
 
-
-.projekte-details > div {
-    flex: 1 0 100%;
-}
-
 .projekte-preview {
-    background: red;
     height: 400px;
     width: 100%;
     background-size: cover;
     background-position: bottom;
+    transition: 300ms ease-in;
 } 
 
 .projekte-navigation {
@@ -61,20 +59,21 @@
 }
 
 .projekte-navigation > div {
+    flex: 1;
     cursor: pointer;
-    background: var(--blueGradient);
     border-radius: 100%;
-    width: 75px;
-    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    overflow: hidden;
 }
 
 .projekte-navigation img {
     width: 100%;
+}
+
+.projekt-text {
+    transition: 300ms ease-in;
 }
 
 
