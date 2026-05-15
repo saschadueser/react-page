@@ -53,15 +53,20 @@
     transition: 300ms ease-in;
 } 
 
-.projekte-navigation {
+.projekte-navigation p {
+    font-size: 0.75rem;
+}
+
+.projekte-navigation-items {
     display: flex;
+    flex-flow: row wrap;
     margin: 1rem 0;
     gap: 2rem;
 }
 
 .projekt-logo {
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,15 +74,15 @@
     transition: 300ms ease-in;
 }
 
-.projekte-navigation > div {
+.projekte-navigation-items > div {
     flex: 1;
 }
 
-.projekte-navigation > div.active {
+.projekte-navigation-items > div.active {
     border: 3px solid var(--accentYellow);
 }
 
-.projekte-navigation img {
+.projekte-navigation-items img {
     width: 75px;
 }
 

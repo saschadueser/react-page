@@ -42,6 +42,8 @@ export default function Projekte() {
                     <div className="projekte-preview" style={{backgroundImage: `url(${chosenProjects[activeProjekt].previewImgURL})`}}></div>
                     <div className="projekte-area">
                         <nav className="projekte-navigation">
+                            <p>Projekt wählen:</p>
+                            <div className='projekte-navigation-items'>
                             {
                                 chosenProjects.map( (el, index) => {
                                     return (
@@ -51,11 +53,11 @@ export default function Projekte() {
                                             () => setActiveProjekt(index)
                                         }>
                                             <img src={el.logoURL}/>
-                                            <p>{el.title}</p>
                                         </div>
                                     )
                                 })
                             }
+                            </div>
                         </nav>
                         <div className='projekte-details-wrapper'>
                             <div className="projekte-details">
