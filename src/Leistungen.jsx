@@ -32,26 +32,28 @@ export default function Intro() {
     return (
         <section className="services">
             <h2>Leistungen</h2>
-            <p>Moderne Websites bestehen heute aus mehr als nur gutem Design. Ich unterstütze Unternehmen und Startups aus Westerstede und Umgebung bei der Erstellung professioneller Webseiten – von der Entwicklung bis zur technischen Optimierung.</p>
-            <div className='section-content services-wrapper'>
-                {
-                    servicePoints.map( el => {
-                        return (
-                            <div className="service">
-                                <div className={el.icon}></div>
-                                <h3>{el.title}</h3>
-                                <p>{el.text}</p>
-                                <ul>
-                                    {el.bulletpoints.map( bp => {
-                                        return (
-                                            <li>{bp}</li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        )
-                    })
-                }
+            <div className='section-content'>
+                <p>Moderne Websites bestehen heute aus mehr als nur gutem Design. Ich unterstütze Unternehmen und Startups aus Westerstede und Umgebung bei der Erstellung professioneller Webseiten – von der Entwicklung bis zur technischen Optimierung.</p>
+                <div className='section-content services-wrapper'>
+                    {
+                        servicePoints.map( el => {
+                            return (
+                                <div className="service">
+                                    <div className={el.icon}></div>
+                                    <h3>{el.title}</h3>
+                                    <p>{el.text}</p>
+                                    <ul>
+                                        {el.bulletpoints.map( bp => {
+                                            return (
+                                                <li>{bp}</li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </section>
 

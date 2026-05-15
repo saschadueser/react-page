@@ -6,9 +6,10 @@ import Hero from './Hero.jsx';
 import Leistungen from './Leistungen.jsx';
 import Projekte from './Projekte.jsx'
 import Form from './Form.jsx'
-import ContactBlocks from './ContactBlocks.jsx';
 import About from './About.jsx'
 import Footer from './Footer.jsx'
+
+import PriceTable from './PriceTable.jsx'
 
 
 function App() {
@@ -22,27 +23,9 @@ function App() {
     <main>
         <Leistungen />
         <Projekte />
+        <PriceTable />
         <About />
-        <section id="contact">
-          <Form />
-          <ContactBlocks contactOptions = {[
-            {
-              title: "eMail",
-              link: "",
-              icon: "fa fa-envelope"            
-            }, 
-            {
-              title: "Telefon",
-              link: "",
-              icon: "fa fa-phone"
-            },
-            {
-              title: "LinkedIN-Profil",
-              link: "",
-              icon: "fa-brands fa-linkedin"
-            }
-          ]} />
-        </section>
+        <Form />
 
     </main>
 

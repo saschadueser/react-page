@@ -16,3 +16,7 @@ label {
     margin-top: 1rem;
 }
 
+form [type="submit"] {
+    border: 2px solid black;
+    color: #000;
+}

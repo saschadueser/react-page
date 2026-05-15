@@ -1,0 +1,63 @@
+.preis-pakete {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.preis-paket {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: var(--regularShadow);
+}
+
+.preis-paket h3 {
+    text-decoration: underline;
+}
+
+.preis-paket ul {
+    margin: 0 auto;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.preis-paket ul li::before {
+    content: "\f00c";
+    font-family: "Fontawesome";
+    margin-right: 10px;
+}
+
+.preis-paket ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.preis-paket:nth-child(even) {
+    background: var(--blueGradient);
+    color: #fff;
+}
+
+.preis-paket:nth-child(odd) {
+    border: 2px solid black;
+}
+
+.preis-paket:nth-child(odd) .button {
+    border-color: black;
+    color: #000;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .preis-pakete {
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+}

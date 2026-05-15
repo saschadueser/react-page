@@ -3,6 +3,7 @@
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+    text-align: center;
 }
 
 .contact-option {
@@ -11,19 +12,22 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    color: #fff; 
+    color: #000; 
     padding: 1rem;
     text-decoration: none;
-    border: 2px solid var(--accentYellow);
+    border: 2px solid #000;
     background: linear-gradient(to right, transparent 0%, transparent 50%, var(--accentYellow)50%, var(--accentYellow) 100%);
     background-size: 200%;
     background-position: left;
     transition: 300ms ease-in;
+    border-radius: 10px;
 }
 
 .contact-option:hover {
     background-position: right;
     color: #000;
 }
+
+
 
 

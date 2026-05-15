@@ -17,8 +17,8 @@
 :root {
   /* --blueGradient: linear-gradient(rgb(103, 103, 161),rgb(26, 49, 80)); */
   --blueGradient: linear-gradient(#4f6a88, #2e2649);
-  --regularShadow: 3px 5px 25px rgba(0,0,0,0.1);
-  --accentYellow: rgb(234, 235, 147);
+  --regularShadow: 3px 5px 25px rgba(0,0,0,0.2);
+  --accentYellow: #eaeb93;
 
   --pageMaxWidth: 1400px;
 }
@@ -88,8 +88,20 @@ h6 {
 }
 
 section {
-  padding: 4rem 3rem 5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 3rem 1rem;
 }
+
+section h2 {
+  grid-column: span 12;
+}
+
+.section-content {
+  grid-column: 2/12;
+}
+
+
 
 section > h2 {
   margin-bottom: 1.5rem;

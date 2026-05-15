@@ -39,33 +39,6 @@ header nav a:hover {
     color: #000;
 }
 
-/* 
-
-a.button {
-    transition: 300ms ease-in;
-    display: inline-block;
-    text-decoration: none;
-    padding: 1rem 1.25rem;
-    color: #fff;
-    margin: 1rem 0;
-    box-shadow: var(--regularShadow);
-    border: 3px solid var(--accentYellow);
-    background: linear-gradient(to right, transparent 0%, transparent 50%, var(--accentYellow)50%, var(--accentYellow) 100%);
-    background-size: 200%;
-    background-position: left;
-}
-
-a.button:hover {
-    background-position: right;
-    color: #000;
-}
-
-
-*/
-
-
-
-
 header nav {
     grid-column: span 2;
     max-height: 250px;

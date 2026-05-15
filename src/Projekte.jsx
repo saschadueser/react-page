@@ -37,33 +37,40 @@ export default function Projekte() {
     return (
         <section className="projekte">
             <h2>Projekte</h2>
-            <div className="projekte-wrapper">
-                <div className="projekte-preview" style={{backgroundImage: `url(${chosenProjects[activeProjekt].previewImgURL})`}}></div>
-                <div className="projekte-area">
-                    <nav className="projekte-navigation">
-                        {
-                            chosenProjects.map( (el, index) => {
-                                return (
-                                    <div onClick={
-                                        () => setActiveProjekt(index)
-                                    }><img src={el.logoURL}/></div>
-                                )
-                            })
-                        }
-                    </nav>
-                    <div className='projekte-details-wrapper'>
-                        <div className="projekte-details">
+            <div className='section-content'>
+                <div className="projekte-wrapper">
+                    <div className="projekte-preview" style={{backgroundImage: `url(${chosenProjects[activeProjekt].previewImgURL})`}}></div>
+                    <div className="projekte-area">
+                        <nav className="projekte-navigation">
                             {
                                 chosenProjects.map( (el, index) => {
                                     return (
-                                        <div className='projekt-text' style={{opacity: `${activeProjekt === index ? 1 : 0}`}}>
-                                            <h3>{el.title}</h3>
-                                            <p>{el.text}</p>
-                                            <a href={el.websiteLink} target='_blank'>Link zur Website <span className='fa fa-external-link'></span></a>
+                                        <div 
+                                        className={`projekt-logo ${activeProjekt === index ? "active" : ""}`}
+                                        onClick={
+                                            () => setActiveProjekt(index)
+                                        }>
+                                            <img src={el.logoURL}/>
+                                            <p>{el.title}</p>
                                         </div>
                                     )
                                 })
                             }
+                        </nav>
+                        <div className='projekte-details-wrapper'>
+                            <div className="projekte-details">
+                                {
+                                    chosenProjects.map( (el, index) => {
+                                        return (
+                                            <div className='projekt-text' style={{opacity: `${activeProjekt === index ? 1 : 0}`}}>
+                                                <h3>{el.title}</h3>
+                                                <p>{el.text}</p>
+                                                <a href={el.websiteLink} target='_blank'>Link zur Website <span className='fa fa-external-link'></span></a>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
