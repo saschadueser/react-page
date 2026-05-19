@@ -8,7 +8,7 @@ import Projekte from './Projekte.jsx'
 import Form from './Form.jsx'
 import About from './About.jsx'
 import Footer from './Footer.jsx'
-
+import Faq from './Faq.jsx'
 import PriceTable from './PriceTable.jsx'
 
 
@@ -25,6 +25,7 @@ function App() {
         <Projekte />
         <PriceTable />
         <About />
+        <Faq />
         <Form />
 
     </main>
