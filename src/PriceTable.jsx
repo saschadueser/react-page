@@ -8,45 +8,51 @@ export default function PriceTable() {
             description: "Ideal für den schnellen, professionellen Einstieg ins Web",
             bulletpoints: [
                 "1 individuelle Landingpage",
-                "Basis Kontaktformular",
-                "Einbindung Social Media Links",
-                "Basis SEO",
-                "In 24h erster Entwurf bei vorhandenem Content",
-                "1 Korrekturschleife"
+                "Kontaktformular",
+                "Impressum & Datenschutz-Seite",
+                "Mobilfreundliches Design",
+                "Logo-Einbindung",
+                "SSL-Zertifikat & Hosting Einrichtung",
             ],
-            price: 790
+            price: 500
         },
         {
             title: "Paket Business",
-            description: "Für den professionellen Auftritt für Business",
+            description: "Für den professionellen Auftritt für dein Business",
             bulletpoints: [
                 "Bis zu 5 Unterseiten",
-                "Erweitere SEO- & Ladezeitenoptimierung",
-                "Einrichtung Blog-/News-Seite",
-                "Bis zu 2 Kontaktformulare",
-                "Strategischer Seitenaufbau",
-                "2 Korrekturschleifen"
+                "Kontaktformulare",
+                "Impressum & Datenschutz-Seite",
+                "Mobilfreundliches Design",
+                "Logo- & CI-Einbindung",
+                "SSL-Zertifikat & Hosting-Einrichtung",
+                "SEO-Grundoptimierung",
+                "Google MyBusiness-Einrichtung",
+                "1 Monat Support inklusive"
             ],
             price: 1200
         },
         {
             title: "Paket Individual",
-            description: "Für den individuellen Web-Auftritt, maßgeschneidert.",
+            description: "Für den individuellen Web-Auftritt, maßgeschneidert nach individueller Absprache.",
             bulletpoints: [
-                "Individuelle Seitenanzahl",
-                "Individuelles Design",
-                "Erweitere SEO- und Performance-Optimierung",
-                "Individuelle Kontaktformulare",
-                "Individuelle Animationseffekte",
-                "Wartung und Betreuung für 1 Jahr"
+                "Beliebig viele Unterseiten",
+                "Kontaktformulare",
+                "Impressum & Datenschutz-Seite",
+                "Mobilfreundliches Design",
+                "Logo- & CI-Einbindung",
+                "SSL-Zertifikat & Hosting-Einrichtung",
+                "SEO-Grundoptimierung",
+                "Google MyBusiness-Einrichtung",
+                "1 Monat Support inklusive"
             ],
-            price: 2490
+            price: 2000
         }
     ]
 
     return (
         <section id="preise-sektion">
-            <h2>Angebotene Preispakete</h2>
+            <h2>Faire Preise. Keine Überraschungen</h2>
             <div className="section-content">
                 <div className="preis-pakete">
                     {

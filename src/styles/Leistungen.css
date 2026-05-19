@@ -8,7 +8,7 @@
 
 .service {
     padding: 2rem 1rem;
-    flex: 1;
+    flex: 1 0 350px;
     text-align: center;
 }
 
@@ -41,9 +41,22 @@
     position: relative;
 }
 
-.service ul, .service p {
+.service ul {
+    margin: 0 auto;
+    display: inline-block;
     text-align: left;
+    list-style-type: none;
 }
+
+.service ul li {
+    display: flex;
+}
+
+.service ul li::before {
+    content: "\f00c";
+    font-family: "Fontawesome";
+    margin-right: 10px;
+} 
 
 
 /* ab Tablet Größe */
@@ -60,7 +73,7 @@
 
     .service {
         text-align: center;
-        padding: 2rem 1rem;
+        padding: 3rem;
         flex: 1 0 350px;
         border-radius: 25px;
         box-shadow: 3px 5px 25px rgba(0,0,0,0.1);

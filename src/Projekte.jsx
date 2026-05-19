@@ -36,7 +36,7 @@ export default function Projekte() {
 
     return (
         <section className="projekte">
-            <h2>Projekte</h2>
+            <h2>Projekte, die für sich sprechen.</h2>
             <div className='section-content'>
                 <div className="projekte-wrapper">
                     <div className="projekte-preview" style={{backgroundImage: `url(${chosenProjects[activeProjekt].previewImgURL})`}}></div>

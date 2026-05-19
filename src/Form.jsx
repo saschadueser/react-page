@@ -5,7 +5,7 @@ import ContactBlocks from './ContactBlocks'
 export default function Form() {
     return (
         <section>
-            <h2>Kontakt</h2>
+            <h2>Lass uns über den Vorhaben sprechen</h2>
             <div className='section-content'>
                 <form action="">
                     <label htmlFor="name">Dein Name:</label>
