@@ -109,6 +109,7 @@ section > h2 {
 
 a {
   color: rgb(40, 67, 106);
+  position: relative;
 }
 
 section:nth-child(even) {

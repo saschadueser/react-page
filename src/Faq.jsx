@@ -29,25 +29,29 @@ export default function Faq() {
     
 
     return (
-        <section>
+        <section id="faq">
             <h2>Häufige Fragen</h2>
             <div className="section-content">
+                <div className='faq-list'>
                 {
                     faqList.map( (faqItem, faqIndex) => {
                         return (
-                            <div className='faq-item'>
-                                <h3 onClick={ () => {
+                            <div className='faq-item' onClick={ () => {
                                     setFaqList( prev => {
                                         return prev.map( (el, i) => {
                                            return i === faqIndex ? {...el, active: !el.active} : el
                                         })
                                     })
-                                }}>{faqItem.question}</h3>
+                                }}>
+                                <h3>{faqItem.question}</h3>
                                 <p className={faqItem.active ? "active" : null}>{faqItem.answer}</p>
+                                <div className={faqItem.active ? "fa fa-minus" : "fa fa-plus"}></div>
                             </div>
                         )
                     })
                 }
+                </div>
+                <a href="">Zu allen Fragen/Antworten</a>
             </div>
         </section>
     )
